@@ -1,0 +1,21 @@
+{{ if .Site.Params.introduction1.enable }}
+{{ "<!-- introduction1 Section Start -->" | safeHTML }}
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+					{{ with .Site.Params.introduction1.title }}<h2>{{ . }}</h2>{{ end }}
+					{{ with .Site.Params.introduction1.content }}<p>{{ . | safeHTML }}</p>{{ end }}
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+					{{ with .Site.Params.introduction1.image }}<img src="{{ . | absURL }}" alt="introduction1-image">{{ end }}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{{ "<!-- introduction1 Section End -->" | safeHTML }}
+{{ end }}

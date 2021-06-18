@@ -1,0 +1,20 @@
+{{ if .Site.Params.introduction4.enable }}
+{{ "<!-- introduction4 Section Start -->" | safeHTML }}
+<section id="works" class="works" style="background-color: white;">
+	<div class="container">
+		<div class="section-heading">
+			{{ with .Site.Params.introduction4.title }}<h1 class="title wow fadeInDown" data-wow-delay=".3s">{{ . }}</h1>{{ end }}
+			{{ with .Site.Params.introduction4.subtitle }}<h5 class="wow fadeInDown" data-wow-delay=".5s">{{ . }}</h5>{{ end }}
+			<br>
+			{{ with .Site.Params.introduction4.contentTitle1 }}<h4 class="title wow fadeInDown" data-wow-delay=".3s">{{ . }}</h4>{{ end }}
+			{{ with .Site.Params.introduction4.content1 }}<p class="wow fadeInDown" data-wow-delay=".5s">{{ . }}</p>{{ end }}
+			<br>
+			{{ with .Site.Params.introduction4.contentTitle2 }}<h4 class="title wow fadeInDown" data-wow-delay=".3s">{{ . }}</h4>{{ end }}
+			{{ with .Site.Params.introduction4.content2 }}<p class="wow fadeInDown" data-wow-delay=".5s">{{ . }}</p>{{ end }}
+			<br>
+			
+		</div>
+	</div>
+</section>
+{{ "<!-- introduction4 Section End -->" | safeHTML }}
+{{ end }}

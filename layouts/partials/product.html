@@ -1,0 +1,84 @@
+{{ if .Site.Params.product.enable }}
+{{ if .Site.Params.product1.enable }}
+{{ if .Site.Params.product2.enable }}
+{{ if .Site.Params.product3.enable }}
+{{ "<!-- product1 Section Start -->" | safeHTML }}
+<section id="works" class="works">
+	<div class="container">
+		<div class="section-heading">
+			{{ with .Site.Params.product.title }}<h1 class="title wow fadeInDown" data-wow-delay=".3s">{{ . }}</h1>{{ end }}
+			{{ with .Site.Params.product.subtitle }}<p class="wow fadeInDown" data-wow-delay=".5s">{{ . }}</p>{{ end }}
+		</div>
+		<div class="row">
+			<!-- p1 s -->
+			<div class="col-md-4 col-sm-6">
+				<figure class="wow fadeInLeft animated product1-item" data-wow-duration="500ms"
+					>
+					<div class="img-wrapper">
+						{{ with .Site.Params.product1.image }}<img src="{{ . | absURL }}" class="img-fluid" alt="product1-image">{{ end }}
+					</div>
+					<figcaption>
+						<h4>
+							<a href="">
+								{{ with .Site.Params.product1.title }}<h2>{{ . }}</h2>{{ end }}
+							</a>
+						</h4>
+						<p>
+							{{ with .Site.Params.product1.content }}<p>{{ . | safeHTML }}</p>{{ end }}
+						</p>
+
+					</figcaption>
+				</figure>
+			</div>
+			<!-- p1 e -->
+			<!-- p2 s -->
+			<div class="col-md-4 col-sm-6">
+				<figure class="wow fadeInLeft animated product2-item" data-wow-duration="500ms"
+					>
+					<div class="img-wrapper">
+						{{ with .Site.Params.product2.image }}<img src="{{ . | absURL }}" class="img-fluid" alt="product2-image">{{ end }}
+					</div>
+					<figcaption>
+						<h4>
+							<a href="">
+								{{ with .Site.Params.product2.title }}<h2>{{ . }}</h2>{{ end }}
+							</a>
+						</h4>
+						<p>
+							{{ with .Site.Params.product2.content }}<p>{{ . | safeHTML }}</p>{{ end }}
+						</p>
+
+					</figcaption>
+				</figure>
+			</div>
+			<!-- p2 e -->
+			<!-- p3 s -->
+			<div class="col-md-4 col-sm-6">
+				<figure class="wow fadeInLeft animated product3-item" data-wow-duration="500ms"
+					>
+					<div class="img-wrapper">
+						{{ with .Site.Params.product3.image }}<img src="{{ . | absURL }}" class="img-fluid" alt="product3-image">{{ end }}
+					</div>
+					<figcaption>
+						<h4>
+							<a href="">
+								{{ with .Site.Params.product3.title }}<h2>{{ . }}</h2>{{ end }}
+							</a>
+						</h4>
+						<p>
+							{{ with .Site.Params.product3.content }}<p>{{ . | safeHTML }}</p>{{ end }}
+						</p>
+
+					</figcaption>
+				</figure>
+			</div>
+			<!-- p3 e -->
+		</div>
+
+	</div>
+</section>
+{{ "<!-- product1 Section End -->" | safeHTML }}
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}

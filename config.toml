@@ -1,0 +1,138 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Timer | Responsive Multipurpose Bootstrap Hugo Template"
+theme = "timer-hugo"
+
+# We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
+
+# Navbar Menus
+[[menu.main]]
+name    = "Home"
+url     = "/"
+weight  = 1
+[[menu.main]]
+name    = "About"
+url     = "about"
+weight  = 2
+[[menu.main]]
+name    = "Service"
+url     = "service"
+weight  = 3
+[[menu.main]]
+name    = "Gallery"
+url     = "gallery"
+weight  = 4
+[[menu.main]]
+name    = "Blog"
+url     = "blog"
+weight  = 5
+[[menu.main]]
+name    = "Contact"
+url     = "contact"
+weight  = 6
+
+# Site Params
+[params]
+home = "Home"
+logo = "images/logo.png"
+dateFormat = "6 January 2006"
+# Meta data
+description = "Airspace Hugo theme"
+author = "Themefisher"
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+# contact form action
+contactFormAction = "#" # contact form works with https://formspree.io
+
+# Banner Section
+[params.banner]
+enable  = true
+bgImage = "images/slider.jpg"
+heading = "FROM HOME"
+description = "讓你在家也能練出令人羨慕的曲線"
+# button
+btn     = true
+btnText = "Download More"
+btnURL  = "https://themefisher.com/"
+
+# flip text
+[[params.banner.flipText]]
+title   = "WORK"
+[[params.banner.flipText]]
+title   = "GYM"
+
+# Homepage About Section
+[params.about]
+enable  = true
+title   = "ABOUT ME"
+content = "Hello, I’m a UI/UX Designer & Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero."
+image   = "images/about/about.jpg"
+
+[params.product]
+enable  = true
+title   = "如何練出誘人的線條"
+content = ""
+image   = "images/product/product1.jpeg"
+
+
+[params.product1]
+enable  = true
+title   = "線上一對一教練課"
+content = "私人教練直接給予最專業的指導，不論你是要增肌減脂、矯正運動、強化運動表現或是飲食控管，私人教練都會給予最適合你的菜單及訓練。"
+image   = "images/product/product1.jpeg"
+
+[params.product2]
+enable  = true
+title   = "線上團體課"
+content = "告別一人運動的孤獨感，透過夥伴間的相互支持，激勵彼此面對跳戰。 <br> 課程內容多元，包含肌力訓練、拳擊有氧、敏捷訓練等，讓你的運動不在無聊。"
+image   = "images/product/product2.jpeg"
+
+[params.product3]
+enable  = true
+title   = "客製化飲食＆訓練菜單"
+content = "專業的營養師以及私人教練共同推出的飲食及訓練菜單，讓你再增肌減脂的道路上不走冤枉路。"
+image   = "images/product/product3.jpeg"
+
+# Portfolio Section On Homepage
+[params.introduction3]
+enable  = true
+title   = "常見問題"
+subtitle= ""
+
+# Portfolio Section On Homepage
+[params.introduction4]
+enable  = true
+title   = "還在擔心？最專業的教練讓你練出線條、健出自信"
+subtitle= "不管是教練課、團體課，我們都擁有最專業的教練團隊。讓你感受到健身不只可以變強壯，也讓變得更帥更美更有自信。"
+contentTitle1 = "一對一課程"
+content1 = "一對一課程依照你自身的狀況來安排最適合你們訓練，不管想增肌、減脂、加強運動表現，最專業的私人教練都可以通通滿足你。"
+contentTitle2 = "團體課"
+content2 = "讓你運動不在孤單，多元化的內容讓你感受到運動不只可以帶來健康，也可以很有趣。"
+content = ""
+
+# Call to Action
+[params.cta]
+enable  = true
+title   = "打破空間 隨處都是你的健身房"
+content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium."
+btnText = "Contact with me"
+btnURL  = "/contact"
+
+# Portfolio Section On Homepage
+[params.portfolio]
+enable  = true
+title   = "Latest Works"
+subtitle= "Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus."
+
+# social icon
+[[params.socialIcon]]
+icon = "ion-social-facebook"
+url = "#"
+
+[[params.socialIcon]]
+icon = "ion-social-instagram"
+url = "#"
+
+[[params.socialIcon]]
+icon = "ion-social-linkedin"
+url = "#"
