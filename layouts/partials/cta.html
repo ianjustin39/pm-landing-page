@@ -9,6 +9,12 @@
             data-wow-duration="500ms">{{ . }}</h1>{{ end }}
             {{ with .Site.Params.cta.content }}<p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">
               {{ . | safeHTML }}</p>{{ end }}
+            {{ with .Site.Params.cta.content2 }}<p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">
+              {{ . | safeHTML }}</p>{{ end }}
+            {{ with .Site.Params.cta.content3 }}<p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">
+              {{ . | safeHTML }}</p>{{ end }}
+            {{ with .Site.Params.cta.content4 }}<p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">
+              {{ . | safeHTML }}</p>{{ end }}
         </div>
       </div>
     </div>
